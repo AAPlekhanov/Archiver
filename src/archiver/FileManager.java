@@ -27,7 +27,6 @@ public class FileManager {
             Path relativePath = rootPath.relativize(path);
             fileList.add(relativePath);
         }
-
         // Добавляем содержимое директории
         if (Files.isDirectory(path)) {
             // Рекурсивно проходимся по всему содержмому директории
@@ -39,13 +38,7 @@ public class FileManager {
             }
         }
     }
-
-
-
-
-
-
-  }
+}
 
 
 
